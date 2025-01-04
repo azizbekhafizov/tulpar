@@ -11,25 +11,70 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./sidebar.css">
     <title>Tulpar</title>
   </head>
   <body>
-    <nav style="display: none" class="navbar">
-      <div class="logo">
-        <img src="./images/logo.png" alt="" />
-        <h1>TULPAR</h1>
-      </div>
-      <nav class="nav-links">
-        <a href="#">Главная</a>
-        <a href="#">Наши услуги</a>
-        <a href="#">Отчеты</a>
-        <a href="#">О нас</a>
-        <a href="#">Новости</a>
-        <a href="#">РУС <span>▼</span></a>
-      </nav>
-    </nav>
 
-    <section style="display: none" class="dual-section">
+    <div class="sidebar">
+      <div class="sidebar_icon">
+        <i class="fa-solid fa-x"></i>
+
+      </div>
+      <div class="sidebar_elements">
+        <ul class="navlinks">
+          <li class="link">
+            <a href="">Главная</a>
+          </li>
+          <li class="link">
+            <a href="">Наши услуги</a>
+          </li>
+          <li class="link">
+            <a href="">Отчеты</a>
+          </li>
+          <li class="link">
+            <a href="">О нас</a>
+          </li>
+          <li class="link">
+            <a href="">Новости</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="navbar container_1">
+        <div class="left_head">
+          <img src="./images/logo.png" alt="" />
+            <h1>TULPAR</h1>
+        </div>
+        <div class="right_head">
+          <ul class="navlinks">
+            <li class="link">
+              <a href="">Главная</a>
+            </li>
+            <li class="link">
+              <a href="">Наши услуги</a>
+            </li>
+            <li class="link">
+              <a href="">Отчеты</a>
+            </li>
+            <li class="link">
+              <a href="">О нас</a>
+            </li>
+            <li class="link">
+              <a href="">Новости</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu_icon">
+        <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <section class="dual-section">
       <div class="left-section">
         <div class="dual-left">
           <img src="./images/head-left.png" alt="" />
@@ -314,7 +359,7 @@
       </div>
     </div>
 
-    <footer style="display: none" class="footer">
+    <footer class="footer">
       <div class="footer-container">
         <!-- Logo Section -->
         <div class="footer-logo">
@@ -353,5 +398,7 @@
         <p>© Все права защищены 2019 "Тулпар"</p>
       </div>
     </footer>
+
+    <script src="./script.js"></script>
   </body>
 </html>
